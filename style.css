@@ -7,8 +7,9 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    
+
 }
+
 body {
     background-image: url('./Assets/cool-background.png');
     /* Replace with your image path */
@@ -239,11 +240,12 @@ section {
     width: 8rem;
     border-radius: 3rem;
 }
-.btn{
+
+.btn {
     border-radius: 50px;
-        background: linear-gradient(145deg, #cacaca, #f0f0f0);
-        box-shadow: 20px 20px 60px #bebebe,
-            -20px -20px 60px #ffffff;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
 }
 
 .btn-color-1,
@@ -268,4 +270,62 @@ section {
 
 .btn-container {
     gap: 1rem;
+}
+
+/* About Section */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Add this property to center the content vertically */
+}
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section_pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
