@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+body {
+    background-image: url('./Assets/cool-background.png');
+    /* Replace with your image path */
+    background-repeat: repeat;
+    /* Repeat the texture to cover the entire background */
+    /* background-color: #000; */
+    /* Set a fallback background color, like black, in case the image doesn't load */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    font-size: 2rem;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* Transition */
+
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+/* Navigation */
+
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(182, 182, 182);
+}
+
+.logo {
+    font-size: 2 rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* Menu */
+#ham-nav {
+    display: none;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.icon.open span:last-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.icon span:first-child {
+    transform: none;
+}
+
+.icon span:first-child {
+    opacity: 1;
+}
+
+.icon span:first-child {
+    transform: none;
+}
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* Profile */
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section_pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p {
+    font-weight: 600;
+}
+
+.section_text_p1 {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.section_text_p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    /* Adjust the margin as needed */
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#social_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* icon */
+.icon {
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+}
+
+/* buttons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300 ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 3rem;
+}
+.btn{
+    border-radius: 50px;
+        background: linear-gradient(145deg, #cacaca, #f0f0f0);
+        box-shadow: 20px 20px 60px #bebebe,
+            -20px -20px 60px #ffffff;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    background: rgb(0, 0, 0);
+    /* Background color on hover */
+    border: rgb(0, 0, 0) 0.1rem solid;
+    /* Border color on hover */
+    color: white;
+    /* Text color on hover */
+}
+
+.btn-container {
+    gap: 1rem;
+}
