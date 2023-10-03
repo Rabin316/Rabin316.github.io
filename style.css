@@ -9,7 +9,10 @@ body {
     font-family: 'Poppins', sans-serif;
 
 }
-
+#particles-js {
+    background: black;
+    height: 100vh;
+}
 body {
     background-image: url('./Assets/cool-background.png');
     /* Replace with your image path */
@@ -17,6 +20,10 @@ body {
     /* Repeat the texture to cover the entire background */
     /* background-color: #000; */
     /* Set a fallback background color, like black, in case the image doesn't load */
+}
+#particles-js {
+    background: black;
+    height: 100vh;
 }
 
 html {
@@ -235,17 +242,10 @@ section {
 
 .btn {
     font-weight: 600;
-    transition: all 300 ms ease;
+    transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
-    border-radius: 3rem;
-}
-
-.btn {
-    border-radius: 50px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow: 20px 20px 60px #bebebe,
-        -20px -20px 60px #ffffff;
+    border-radius: 2rem;
 }
 
 .btn-color-1,
@@ -257,15 +257,28 @@ section {
 .btn-color-2:hover {
     cursor: pointer;
 }
+.btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
 
-.btn-color-1:hover,
+/* .btn-color-1:hover,
 .btn-color-2:hover {
     background: rgb(0, 0, 0);
-    /* Background color on hover */
     border: rgb(0, 0, 0) 0.1rem solid;
-    /* Border color on hover */
     color: white;
-    /* Text color on hover */
+} */
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
@@ -317,15 +330,50 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Add this property to center the content vertically */
 }
-.section-container {
+/* .section-container {
     gap: 4rem;
     height: 80%;
-}
+} */
 
-.section_pic-container {
+/* .section_pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
+} */
+/* Expereince */
+
+#experience{
+    position: relative;
+}
+.experience-sub-title{
+    color:rgb(85,85,85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+}
+.article-conatiner{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width:10rem;
+    justify-content: space-around;
+    gap:0.5rem;
+    margin-bottom: 1rem; 
+}
+article .icon{
+    cursor:default;
 }
