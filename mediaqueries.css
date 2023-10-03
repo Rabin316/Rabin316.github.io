@@ -3,6 +3,7 @@
     /* Add your default styles for larger screens here */
 }
 
+
 /* Styles for screens up to 1400px wide */
 @media screen and (max-width: 1400px) {
     #profile {
@@ -139,4 +140,5 @@
     .text-container {
         text-align: justify;
     }
+
 }

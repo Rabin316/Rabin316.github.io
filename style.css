@@ -389,6 +389,7 @@ article .icon {
 /* Projects Section */
 #projects {
     position: relative;
+    margin-bottom: 6rem;
 }
 
 .color-container {
@@ -408,28 +409,6 @@ article .icon {
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
-}
-/* CSS for the modal */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-    overflow: auto;
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 800px;
-    position: relative;
 }
 
 .close {
@@ -480,7 +459,7 @@ article .icon {
 }
 /*Footer Information*/
 footer{
-    height:26vh;
+    height:35vh;
     margin:0 1rem;
 }
 footer p{
