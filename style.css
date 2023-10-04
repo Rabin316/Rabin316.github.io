@@ -10,13 +10,16 @@ body {
 
 }
 
-#particles-js {
-    background: black;
-    height: 100vh;
+.particles-js-canvas-el{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 
 body {
-    background-image: url('./Assets/cool-background.png');
+    /* background-image: url('./Assets/cool-background.png'); */
     /* Replace with your image path */
     background-repeat: repeat;
     /* Repeat the texture to cover the entire background */
@@ -24,10 +27,6 @@ body {
     /* Set a fallback background color, like black, in case the image doesn't load */
 }
 
-#particles-js {
-    background: black;
-    height: 100vh;
-}
 
 html {
     scroll-behavior: smooth;
