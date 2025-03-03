@@ -9,7 +9,3 @@ With a clean and modern design, this portfolio website aims to highlight my abil
 - CSS
 - JavaScript
 
-## Features
-- Overview of  background
-- Showcase of notable projects
-- Descriptions, screenshots, and links to repositories or live demos
