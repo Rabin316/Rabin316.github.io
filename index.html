@@ -1122,4 +1122,199 @@
         z-index: -1;
     }
 </style>
+<!-- Character Animations -->
+<div class="character character-left">
+    <div class="body">
+        <div class="head"></div>
+        <div class="arm-left"></div>
+        <div class="arm-right"></div>
+        <div class="leg-left"></div>
+        <div class="leg-right"></div>
+    </div>
+</div>
+<div class="character character-right">
+    <div class="body">
+        <div class="head"></div>
+        <div class="arm-left"></div>
+        <div class="arm-right"></div>
+        <div class="leg-left"></div>
+        <div class="leg-right"></div>
+    </div>
+</div>
 
+<style>
+    /* 8-bit Character Styles */
+    .character {
+        position: absolute;
+        bottom: 0;
+        width: 50px;
+        height: 100px;
+        background-color: var(--accent-color);
+        animation: walk 1s steps(4) infinite;
+    }
+
+    .character-left {
+        left: 10%;
+    }
+
+    .character-right {
+        right: 10%;
+    }
+
+    .character .body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .character .head {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: var(--text-color);
+        transform: translateX(-50%);
+    }
+
+    .character .arm-left,
+    .character .arm-right {
+        position: absolute;
+        top: 40px;
+        width: 10px;
+        height: 30px;
+        background-color: var(--text-color);
+    }
+
+    .character .arm-left {
+        left: -10px;
+    }
+
+    .character .arm-right {
+        right: -10px;
+    }
+
+    .character .leg-left,
+    .character .leg-right {
+        position: absolute;
+        bottom: 0;
+        width: 10px;
+        height: 30px;
+        background-color: var(--text-color);
+    }
+
+    .character .leg-left {
+        left: 10px;
+    }
+
+    .character .leg-right {
+        right: 10px;
+    }
+
+    @keyframes walk {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
+</style>
+<script>
+    // Character Animation Enhancements
+    const characters = document.querySelectorAll('.character');
+
+    characters.forEach(character => {
+        character.addEventListener('mouseover', () => {
+            character.classList.add('jump');
+        });
+
+        character.addEventListener('animationend', () => {
+            character.classList.remove('jump');
+        });
+    });
+</script>
+
+<style>
+    /* Enhanced 8-bit Character Styles */
+    .character {
+        position: absolute;
+        bottom: 0;
+        width: 50px;
+        height: 100px;
+        background-color: var(--accent-color);
+        animation: walk 1s steps(4) infinite;
+        cursor: pointer;
+    }
+
+    .character-left {
+        left: 10%;
+    }
+
+    .character-right {
+        right: 10%;
+    }
+
+    .character .body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .character .head {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: var(--text-color);
+        transform: translateX(-50%);
+    }
+
+    .character .arm-left,
+    .character .arm-right {
+        position: absolute;
+        top: 40px;
+        width: 10px;
+        height: 30px;
+        background-color: var(--text-color);
+    }
+
+    .character .arm-left {
+        left: -10px;
+    }
+
+    .character .arm-right {
+        right: -10px;
+    }
+
+    .character .leg-left,
+    .character .leg-right {
+        position: absolute;
+        bottom: 0;
+        width: 10px;
+        height: 30px;
+        background-color: var(--text-color);
+    }
+
+    .character .leg-left {
+        left: 10px;
+    }
+
+    .character .leg-right {
+        right: 10px;
+    }
+
+    @keyframes walk {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
+
+    .character.jump {
+        animation: jump 0.5s ease;
+    }
+
+    @keyframes jump {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-50px); }
+        100% { transform: translateY(0); }
+    }
+</style>
